@@ -9,6 +9,7 @@ function startQuestions() {
     document.getElementById("questions"+num).style.display = "block"; 
     old = num - 1;
     document.getElementById("questions"+old).style.display = "none";
+    document.getElementById("que").style.display = "none"; 
   }  
   
   function answerYes() {
