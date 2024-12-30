@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating night</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+   
+    <div class="container mx-auto">
+       
+        <h1 class="text-2xl" id="init">Phương ưi, tớ mún hỏi cậu cái này (●'◡'●)</h1>
+        <button onclick="startQuestions()" id="que">Cậu hỏi đi!</button>
+
+        <div id="questions1" style="display: none;">
+            <h1 class="text-2xl mt-8">Câu 1:</h1>
+            <p>Cậu có muốn đi chơi với tớ hem?</p>
+            <img src="./1_ask_out.jpg" width="300" height="300">
+            <br>
+            <button onclick="nextQuestions(2)">Cóa</button>
+            <button onclick="answerNo()" class="no">Khum</button>
+        </div>
+
+        <div id="questions2" style="display: none;">
+            <h1 class="text-2xl mt-8">Question 2:</h1>
+            <img src="./2_ask_out.jpg" width="300" height="300">
+            <p>Cậu có rảnh vào thứ 7 tuần này (03/01/2025) vào lúc 19h00 khum?</p>
+            <button onclick="answerYes()">Cóa</button>
+            <button onclick="answerNo()" class="no">Khum</button>
+        </div>
+
+        <div id="message" style="display: none;">
+            <img src="./spinning-cat.gif"  width="300" height="450" >
+            <p id="messageText"></p>
+        </div>
+        
+    </div>
+    <canvas id="confetti-canvas">
+   </canvas>
+
+
+    <footer class="text-center mt-8">
+        Made with ❤️ by Téo Biến
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script>
+    <script src="script.js" ></script>
+</body>
+</html>
